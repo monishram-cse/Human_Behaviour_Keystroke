@@ -14,6 +14,7 @@ USERS = {
     "priyanshu": "12345678",
     "rahul": "abcd",
     "ashwini": "1234"
+    "monishram": "12345678"
 }
 
 multi_model = MultiUserModel()
