@@ -24,15 +24,15 @@ class Enroller:
         if self.operation == "password":
             password = self.input_word.split(" ")
             password = "-".join(password)
-            with open("dataset/passphrase/" + self.username + '_' + password + '.json', "w") as fp:
+            with open("dataset/password/" + self.username + '_' + password + '.json', "w") as fp:
                 json.dump(listener.probe_list, fp, indent=4)
         else:
-            with open("dataset/passphrase/" + self.username + '.json', "w") as fp:
+            with open("dataset/password/" + self.username + '.json', "w") as fp:
                 json.dump(listener.probe_list, fp, indent=4)
 
 
 if __name__ == '__main__':
     psw = Enroller("password")
     psw.start_enroll()
-    passphrase = Enroller("passphrase")
-    passphrase.start_enroll()
+    password = Enroller("password")
+    password.start_enroll()

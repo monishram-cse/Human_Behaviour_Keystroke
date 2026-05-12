@@ -46,9 +46,9 @@ class Identifier:
 
     def get_classes(self):
         """
-            Extracts tensors from the passphrase dataset
+            Extracts tensors from the password dataset
         """
-        directory = "dataset/passphrase"
+        directory = "dataset/password"
         for filename in os.listdir(directory):
             f = os.path.join(directory, filename)
             username = filename.split('.')[0]
